@@ -1,0 +1,79 @@
+@use 'colors.scss' as color;
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+.navLinks {
+  width: 100%;
+
+  left: 48px;
+  display: none;
+  margin: 0;
+}
+
+.navLinks a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: color.$black-jet;
+}
+
+.navLinks a:hover{
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+
+}
+
+.Name{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.Name:hover{
+
+  color: color.$brown-raw-umber;
+  transition: 1.2s;
+
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .navLinks {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .navLinks a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

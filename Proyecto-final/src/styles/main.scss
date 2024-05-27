@@ -1,0 +1,51 @@
+@use '../styles/colors.scss' as color;
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Poppins, sans-serif;
+}
+
+:root{
+  font-size: 14px;
+}
+
+a,
+a:visited {
+    color: color.$black-jet;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bone-bg{
+  background-color: color.$brown-bone;
+}
+
+.raw-umber-bg{
+  background-color: color.$brown-raw-umber;
+}
+
+.black-bg{
+  background-color: color.$black-nightfall;
+}
+
+.isabelline-bg{
+  background-color: color.$brown-isabelline;
+}
+
+.isabelline-font{
+  color: color.$brown-isabelline;
+}
+
+.raw-umber-font{
+  color: #8B6D55
+}
+
+.letterSpace{
+  letter-spacing:  0.1rem;
+}
+
+.lineHeight{
+  line-height: 1.6;
+}
