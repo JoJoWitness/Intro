@@ -49,3 +49,21 @@ a:visited {
 .lineHeight{
   line-height: 1.6;
 }
+
+@keyframes venezuelanMap {
+  0% {scale: 0.6;}
+  55% {scale: 1.03;}
+  100% {scale: 1;}
+ 
+
+}
+
+.mainPageSVG{
+
+  fill: color.$brown-coffee;
+  color: color.$brown-raw-umber;
+  animation-name: venezuelanMap;
+  animation-duration: 3s;
+  margin-left: 25px;
+}
+

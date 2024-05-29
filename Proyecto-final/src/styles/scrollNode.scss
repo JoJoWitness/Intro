@@ -1,0 +1,71 @@
+@use '../styles/colors.scss' as color;
+
+.oddImage, .evenImage{
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.oddImage{
+  transition-duration: 1s; 
+  -webkit-transition: all 1s ease; 
+  -moz-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+  -ms-transition: all 1s ease; 
+  transition: all 1s ease; 
+}
+
+.oddImage:hover{
+  transform: rotate(-2deg) scale(1.1)
+}
+
+.evenImage{
+  transition-duration: 1s; 
+  -webkit-transition: all 1s ease; 
+  -moz-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+  -ms-transition: all 1s ease; 
+  transition: all 1s ease; 
+}
+
+.evenImage:hover{
+  transform: rotate(2deg) scale(1.1)
+}
+
+
+
+.scrollLine{
+  width: 13px;
+  background-color: color.$brown-khaki;
+
+}
+
+.scrollLineFirstImg{
+  border-radius: 6px 6px 0px 0px;
+}
+
+// @keyframes subline {
+//   0% {height: 0%}
+//   100% {height: 100%}
+  
+// }
+
+.scrollSubLine{
+  width: 100%;
+  height: 100%;
+  background-color: color.$purple-grape;;
+  animation-name: subline;
+  animation-duration: 2s;
+
+}
+
+.scrollText{
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  h3{
+    color: color.$brown-coffee;
+  }
+}
+
