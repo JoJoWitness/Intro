@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import "../../styles/event.scss"
+
+const pageTitle = "Un viaje por la historia"
+
+const props ={
+   title: "Firma del acta de independencia",
+   year: "1811",
+   text:" El 5 de julio de 1811, se firmó el Acta de Independencia de Venezuela, en la que se declaraba la separación de la Capitanía General de Venezuela del Imperio español. La firma del Acta de Independencia de Venezuela fue un momento histórico que marcó el inicio de la lucha por la libertad y la soberanía del país.",
+   imag: "../../src/assets/mainPage/Firma_del_acta_de_independencia_de_Venezuela.jpg"
+}
+---
+
+<BaseLayout pageTitle={pageTitle} >
+   <div class="d-flex flex-column">
+      <div class="container d-flex justify-content-between p-5 gap-5">
+         <div class='w-50 d-flex flex-column justify-content-center py-5 px-4 gap-2 lineHeight'>
+            <h2 class="fs-3 fw-bold mb-4 raw-umber-font letterSpace">Bienvenido a un viaje por la historia</h1>
+            <p class="fs-5 m-0 ">Una web que busca enseñar los momentos mas importantes de nuestra historia, de manera simple y consisa.</p>
+            <p class="fs-5 m-0">Nuestro enfoque principal es que conozcas los lugares donde ocurrieron estos eventos, al igual todos aquellos sitios que cumplen la gran labor de informarnos sobre nuestra hisotira</p>
+            <a class="raw-umber-font fw-bold  letterSpace" href="">Ver pagina de la cita original</a>
+         </div>
+         <img class="eventImg my-5 " src={props.imag} alt="Map" />
+      </div>
+      <div class="container d-flex flex-column align-items-center justify-content-between w-100 px-5 mb-5 gap-4">
+            <h4 class="fs-3 fw-medium mb-4 raw-umber-font">Conoce donde ocurrio el evento</h4>
+            <div class="d-flex w-100 gap-5 justify-content-evenly">
+               <img class="eventMap " src={props.imag} alt="Map" />
+            </div>
+               
+            
+      </div>
+      
+   </div>
+
+</BaseLayout>

@@ -19,7 +19,7 @@ export const OddImage = (props: scrollNode) => {
       
               <div className="scrollSubLine "/> 
             </div>
-            <div className="d-flex flex-column gap-3 scrollText py-5">
+            <div className="d-flex flex-column gap-3 justify-content-center scrollText py-5">
               <div className="d-flex flex-column gap-0 eventTitle">
                 <h3 className="fs-4 fw-bold">{title}</h3>
                 <h3 className="fs-5 fw-semibold">{year}</h3>
@@ -38,7 +38,7 @@ export const EvenImage = (props: scrollNode) => {
 
     return (
         <div className="scrollNode d-flex justify-content-between align-items-centerW">
-              <div className="d-flex flex-column gap-3 scrollText py-5">
+              <div className="d-flex flex-column gap-3 justify-content-center scrollText py-5">
                 <div className="d-flex flex-column gap-0 eventTitle">
                   <h3 className="fs-4 fw-bold">{title}</h3>
                   <h3 className="fs-5 fw-semibold">{year}</h3>
@@ -46,7 +46,7 @@ export const EvenImage = (props: scrollNode) => {
                   <p>
                     {text}
                   </p>
-            </div>
+              </div>
             <div className="scrollLine ">
               <div className="scrollSubLine "/> 
             </div>
