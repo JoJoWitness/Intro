@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import "../../styles/staff.scss"
+
+const pageTitle = "Contactanos"
+
+---
+
+<BaseLayout pageTitle={pageTitle} >
+   <div class="d-flex flex-column">
+      <div class="container d-flex justify-content-between p-5 gap-5">
+         <div class='w-100 d-flex flex-column justify-content-center align-items-center px-4 gap-2 lineHeight'>
+            <h2 class="fs-3 fw-bold  raw-umber-font letterSpace">Contactanos</h1>
+      
+              <form class="w-75" action="/submit_form" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label fs-4 brown-umber fs-medium">Nombre</label>
+                  <input type="text" class="form-control borderInput" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="number" class="form-label fs-4 brown-umber fs-medium">Number</label>
+                  <input type="tel" class="form-control borderInput" id="number" name="number" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fs-4 brown-umber fs-medium">Email address</label>
+                  <input type="email" class="form-control borderInput" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label fs-4 brown-umber fs-medium">Message</label>
+                  <textarea class="form-control borderInput" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary fs-4">Submit</button>
+              </form>
+              
+         </div>
+      </div>
+   </div>
+</BaseLayout>

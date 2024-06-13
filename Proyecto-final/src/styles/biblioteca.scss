@@ -1,0 +1,23 @@
+.bookWidth{
+  width: 225px;
+  height: 300px;
+  object-fit: contain;
+
+  transition-duration: 1s; 
+  -webkit-transition: all 1s ease; 
+  -moz-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+  -ms-transition: all 1s ease; 
+  transition: all 1s ease; 
+}
+
+.bookImg{
+  width: 100%;
+  object-fit: contain;
+
+  
+}
+
+.bookWidth:hover{
+  transform: scale(1.05)
+}

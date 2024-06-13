@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import "../../styles/book.scss"
+
+const pageTitle = "Todo Llevara su Nombre"
+---
+
+<BaseLayout pageTitle={pageTitle} >
+  <div class="d-flex flex-column">
+     <div class="container d-flex justify-content-between  gap-5">
+        <div class='w-50 d-flex justify-content-between py-5 px-4 gap-2 lineHeight w-100'>
+          
+          <div class="bookSipnosis d-flex flex-column align-items-center gap-4"  >
+            <div class="fs-3 fw-semibold brown-umber">Todo Llevara su Nombre</div>
+            <img class="bookSipnosisImg " src="../../../src/assets/book/015895.jpg"/>
+            <div>
+              <div class="fs-4 fw-medium brown-umber">Fernando Goñi</div>
+              <div class="fs-5 fw-medium brown-umber">20 de febrero  de 2014</div>
+            </div>
+          </div>
+
+          <div class="fs-5 brown-umber bookText d-flex flex-column justify-content-center" >
+            <div class="fs-4 brown-umber fw-semibold" >Sipnosis</div>
+            <p> En los ultimos dias de vida de Simon Bolivar, el Libertador, hace un recuento de su existencia. 
+              A traves de sus cartas, su testamento y tambien desde la perspectiva del medico que lo atendio en ese tiempo, Alejandro Prospero Reverend, se configura el retrato de un gran hombre y un gran estadista. 
+              Que es lo que llevo a Bolivar a esta situacion? Quien lo traiciono? Como se siente al respecto de lo que logro? 
+              Goni consigue mostrarnos la debilidad del heroe: un hombre poderoso en la antesala de la muerte, sus intentos de resistirse a abandonar este mundo y la aceptacion final de un desenlace inevitable en una novela que es, ante todo, un fresco sobre la dignidad de una gran figura historica.
+            </p>
+          
+          </div>
+          
+           
+              
+     </div>
+     
+  </div>
+
+</BaseLayout>
