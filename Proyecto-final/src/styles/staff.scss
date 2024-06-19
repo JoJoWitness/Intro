@@ -47,3 +47,16 @@ background-color: #9521D4;
   scale: 1.05;
   transition: 1s;
 }
+
+@media screen and (max-width: 768px){
+  .staffContainer{
+    flex-direction: column;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 60px;
+  }
+  .staffCard{
+    align-items: center;
+    min-width: 350px;
+  }
+}

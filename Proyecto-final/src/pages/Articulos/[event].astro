@@ -16,8 +16,8 @@ const event = timeline.find(event => event.param === params)
 ---
 
 <BaseLayout pageTitle={event?.title} >
-   <div class="d-flex flex-column">
-      <div class="container  d-flex justify-content-between p-5  position-relative flex-wrap">
+   <div class="d-flex flex-column align-items-center">
+      <div class="container  d-flex justify-content-between px-5 pt-2 pb-5  position-relative flex-wrap-reverse">
          
          <div class='w-50 eventText d-flex flex-column justify-content-center py-5 px-4 gap-2 lineHeight '>
             
@@ -34,7 +34,7 @@ const event = timeline.find(event => event.param === params)
              Volver
             </button>
          </div>
-         <img class="eventImg my-5" src={event?.img.src} alt="Map" />
+         <img class="eventImg mt-5" src={event?.img.src} alt="Map" />
       </div>
       
       

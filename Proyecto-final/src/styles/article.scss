@@ -1,0 +1,43 @@
+@use '../styles/colors.scss' as color;
+
+.articleContainer{
+  width: 100%;
+  height: 250px;
+
+  border-top: 2px solid color.$brown-raw-umber;
+  border-bottom: 2px solid color.$brown-raw-umber;
+}
+
+.articleImg{
+  height: 100%;
+  width: auto;
+}
+
+.articleText{
+  width: 60%;
+  color: color.$brown-coffee;;
+}
+
+@media screen and (max-width: 768px)  {
+  
+.articleContainer{
+  height: auto;
+  flex-direction: column;
+}
+
+.articleImg{
+  
+  width: 100%;
+  height: auto !important;
+}
+
+.internalArticleContainer{
+  flex-direction: column !important;
+  height: auto !important;
+  margin: 10px 0px 10px 0px !important; 
+}
+
+.articleText{
+  width: 100%;
+}
+}

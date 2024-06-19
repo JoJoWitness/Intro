@@ -1,9 +1,9 @@
 ---
-import {Book} from "../../Components/Book"
+import {Articles} from "../../Components/Articles"
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import "../../styles/biblioteca.scss"
 
-const pageTitle = "Biblioteca"
+const pageTitle = "Articulos"
 
 
 
@@ -13,8 +13,8 @@ const pageTitle = "Biblioteca"
    <div class="d-flex bookPage flex-column mb-5">
       <div class="container d-flex justify-content-between p-5 gap-5">
          <div class='w-50 d-flex flex-column justify-content-center px-4 gap-2 lineHeight w-100'>
-            <h1 class="fs-3 fw-bold m-0 raw-umber-font letterSpace">Conoce nuestras publicaciones</h1>
-               <Book client:load/>
+            <h1 class="fs-3 fw-bold m-0 raw-umber-font letterSpace">Conoce nuestros articulos</h1>
+               <Articles client:load/>
          </div>
       </div>
    </div>

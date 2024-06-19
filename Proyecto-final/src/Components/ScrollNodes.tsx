@@ -53,7 +53,7 @@ export const AllNode = ()=>{
 
 
   return(
-    <div className="container h-100 flex-column gap-0">
+    <div className="container timelineContainer h-100 flex-column gap-0">
     {
       timeline.map((event, index) => {
         if(index % 2 !==0){

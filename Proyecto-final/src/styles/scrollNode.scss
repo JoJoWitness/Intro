@@ -100,3 +100,9 @@
   scale: 1.05;
   transition: 1s;
 }
+
+@media screen and (max-width: 768px) {
+  .timelineContainer{
+    display: none;
+  }
+}

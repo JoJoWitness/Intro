@@ -13,7 +13,6 @@
 
 a,
 a:visited {
-    color: color.$black-jet;
     text-decoration: none;
     font-size: 16px;
 }
@@ -50,6 +49,10 @@ a:visited {
   color: color.$brown-umber;
 }
 
+.font-BlackJet{
+  color: color.$black-jet
+}
+
 .letterSpace{
   letter-spacing:  0.1rem;
 }
@@ -73,5 +76,48 @@ a:visited {
   animation-name: venezuelanMap;
   animation-duration: 3s;
   margin-left: 25px;
+}
+
+.mainText{
+  min-width: 350px;
+  width: 45%;
+}
+
+.mainTextContainer{
+  justify-content: space-between;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .mainTextContainer{
+    flex-direction: column !important;
+    align-items: center;
+    gap: 30px !important;
+    padding: 0rem !important; 
+  }
+  .mainMap{
+   display: none;
+  }
+
+  .mainText{
+    padding: 0px !important;
+  }
+
+  .timelineContainer{
+    display: none;
+  }
+}
+
+.movilSVGMap{
+  fill: color.$brown-coffee;
+  color: color.$brown-raw-umber;
+  width: 350px;
+
+}
+
+@media screen and (min-width: 768px){
+  .movilSVGMap{
+    display: none;
+  }
 }
 
