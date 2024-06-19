@@ -63,8 +63,10 @@
 }
 
 .expanded {
+  flex-direction: column !important;
   display: unset;
 }
+
 
 @media screen and (min-width: 636px) {
   .navLinks {
@@ -82,5 +84,13 @@
 
   .hamburger {
     display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 636px) {
+  .navBarContainer{
+    flex-direction: column !important;
   }
 }

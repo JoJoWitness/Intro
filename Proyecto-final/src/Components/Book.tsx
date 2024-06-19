@@ -14,7 +14,7 @@ export const Book = () =>{
         <div className="bookWidth my-5 ">
           <img className="bookImg w-100" src={libro.img.src}/>
           <div className="brown-umber fs-5 fw-medium">{libro.title}</div>
-          <div className="fs-5">{libro.autor}</div>
+          <div className="fs-5 font-BlackJet">{libro.autor}</div>
         </div>
       </a>
     ) 

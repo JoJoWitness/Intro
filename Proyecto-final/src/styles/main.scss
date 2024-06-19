@@ -79,7 +79,7 @@ a:visited {
 }
 
 .mainText{
-  min-width: 350px;
+  min-width: 330px;
   width: 45%;
 }
 
@@ -106,12 +106,20 @@ a:visited {
   .timelineContainer{
     display: none;
   }
+
+  .superContainer{
+    padding: 1rem !important;
+  }
+
+  .mainTitle{
+    margin-bottom: 0px !important;
+  }
 }
 
 .movilSVGMap{
   fill: color.$brown-coffee;
   color: color.$brown-raw-umber;
-  width: 350px;
+  width: 330px;
 
 }
 
