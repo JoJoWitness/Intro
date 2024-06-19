@@ -1,22 +1,24 @@
+import "../styles/scrollNode.scss"
+import { libros } from "../data/libros"
+import React, { useEffect, useRef, useState } from "react"
 
-type book = {
-  title: string,
-  autor: string
-  imag: string,
-  link: string
 
-}
+export const Book = () =>{
 
-export const Book = (props: book) =>{
-  const {title, autor, imag, link} = props;
-  return(
-    <a href={link}>
-      <div className="bookWidth me-5">
-        
-        <img className="bookImg w-100" src={imag}/>
-        <div className="brown-umber fs-5 fw-medium">{title}</div>
-        <div className="fs-5">{autor}</div>
-      </div>
-    </a>
+  return( <div className="d-flex w-100 gap-5 justify-content-start flex-wrap">
+  {
+  libros.map((libro)=>{
+    return( 
+      <a className="my-4" href={libro.linkNav}>
+        <div className="bookWidth my-5 me-5">
+          <img className="bookImg w-100" src={libro.img.src}/>
+          <div className="brown-umber fs-5 fw-medium">{libro.title}</div>
+          <div className="fs-5">{libro.autor}</div>
+        </div>
+      </a>
+    ) 
+  })
+  }
+  </div>
   )
 }

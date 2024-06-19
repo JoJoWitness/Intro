@@ -1,5 +1,8 @@
+@use '../styles/colors.scss' as color;
+
 .bookSipnosis{
   width: 40%;
+  min-width: 350px;
 }
 
 .bookSipnosisImg{
@@ -10,4 +13,22 @@
 
 .bookText{
   width: 55%;
+  min-width: 350px;
+}
+
+.btnGoBack{
+   
+  width: 120px;
+  height: 30px;
+ 
+  background-color: #EAE1D6;
+  border: none;
+  border-radius: 5px;
+  outline: 2px solid color.$brown-khaki;
+}
+
+.btnGoBack:hover{
+  background-color: #C9B5A6;
+  scale: 1.05;
+  transition: 1s;
 }

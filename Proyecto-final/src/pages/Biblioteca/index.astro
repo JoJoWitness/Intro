@@ -7,50 +7,16 @@ import "../../styles/biblioteca.scss"
 
 const pageTitle = "Biblioteca"
 
-const props ={
-   title: "Todo llevara su nombre",
-   autor: "Fermin Goñi",
-   imag: "../../src/assets/book/015895.jpg",
-   link: "TodoLlevaraSuNombre"
-}
 
-const props1 ={
-   title: "Bover el Urogallo",
-   autor: "Francisco Herrera Luque",
-   imag: "../../src/assets/book/boves1.jpg"
-}
-
-const props2 ={
-   title: "Maravillas y Misterios de Venezuela",
-   autor: "Alejandro de Humbolt",
-   imag: "../../src/assets/book/Maravillas-de-Humboldt.webp",
-   link: "TodoLlevaraSuNombre"
-}
-
-const props3 ={
-   title: "Las Lanzas Coloradas",
-   autor: "Arturo Uslar Pietri",
-   imag: "../../src/assets/book/csm_Las_lanzas_coloradas_f63513443b.jpg",
-   link: "TodoLlevaraSuNombre"
-}
 
 ---
 
 <BaseLayout pageTitle={pageTitle} >
-   <div class="d-flex flex-column">
+   <div class="d-flex flex-column py-5 mb-5">
       <div class="container d-flex justify-content-between p-5 gap-5">
          <div class='w-50 d-flex flex-column justify-content-center px-4 gap-2 lineHeight w-100'>
-            <h2 class="fs-3 fw-bold mb-4 raw-umber-font letterSpace">Conoce nuestras publicaciones</h1>
-            
-            <div class="d-flex w-100 gap-5 justify-content-start">
-               <Book {...props}/>
-               <Book {...props1}/>
-               <Book {...props2}/>
-               <Book {...props3}/>
-               
-            </div>
-            
-               
+            <h2 class="fs-3 fw-bold m-0 raw-umber-font letterSpace">Conoce nuestras publicaciones</h1>
+               <Book client:load/>
       </div>
       
    </div>

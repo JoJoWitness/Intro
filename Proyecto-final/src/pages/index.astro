@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-import { OddImage, EvenImage } from "../Components/ScrollNodes"
+import { AllNode } from "../Components/ScrollNodes"
+import React from "react"
 const pageTitle = "Un viaje por la historia"
 
 const props ={
@@ -12,12 +13,12 @@ const props ={
 ---
 
 <BaseLayout pageTitle={pageTitle} >
-   <div class="d-flex flex-column">
+   <div class="d-flex flex-column p-5">
       <div class="container d-flex justify-content-between p-5 mb-5">
          <div class='w-50 d-flex flex-column py-5 px-4 gap-2 lineHeight'>
-            <h2 class="fs-1 fw-bold mb-4 raw-umber-font letterSpace">Bienvenido a un viaje por la historia</h1>
-            <p class="fs-4 m-0 ">Una web que busca enseñar los momentos mas importantes de nuestra historia, de manera simple y consisa.</p>
-            <p class="fs-4 m-0">Nuestro enfoque principal es que conozcas los lugares donde ocurrieron estos eventos, al igual todos aquellos sitios que cumplen la gran labor de informarnos sobre nuestra hisotira</p>
+            <h2 class="fs-1 fw-bold mb-4 raw-umber-font letterSpace">Bienvenido a Editorial Turpial</h1>
+            <p class="fs-4 m-0 ">Somos una editorial que se enfoca en contar la historia, atraves de articulos, libros y revistas que narran los eventos que marcaron nuestro pais.</p>
+            <p class="fs-4 m-0">Nuestro enfoque principal es ayudar a dar a conocer a todas aquellas hechos que fueron relevantes, como de ayudar a todos aquellos escritores e historiadores que tengan como vision dar a conocer nuestra historia.</p>
          </div>
          <div class="w-50 p-1 ">
                <svg
@@ -149,11 +150,7 @@ const props ={
             </svg>
          </div>
       </div>
-      <div class="container h-100 flex-column gap-0">
-         <OddImage {...props}/>
-         <EvenImage {...props}/>
-         
-      </div>
+      <AllNode client:load/>
    </div>
 
 </BaseLayout>

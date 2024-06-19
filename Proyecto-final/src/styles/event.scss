@@ -1,9 +1,28 @@
+@use '../styles/colors.scss' as color;
+
 .eventImg{
-    width: 60%;
+    width: 45%;
     object-fit: cover;
     border-radius: 10px;
+    min-width: 350px;
     
 }
+
+.eventText{
+    min-width: 350px;
+}
+
+.btnGoBack{
+   
+    width: 120px;
+    height: 30px;
+   
+    background-color: #EAE1D6;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid color.$brown-khaki;
+}
+
 
 .pageLink:hover{
     font-weight: 700 !important;
@@ -16,4 +35,8 @@
     object-fit: cover;
     border-radius: 10px;
     
+}
+
+.justify-text{
+    text-align: justify;
 }
